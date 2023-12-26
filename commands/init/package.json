@@ -1,0 +1,43 @@
+{
+  "name": "@fulcra/init",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "Embrace <wangyifreedom@126.com>",
+  "homepage": "https://github.com/EmbraceCoder/zhid-cli#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmbraceCoder/zhid-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EmbraceCoder/zhid-cli/issues"
+  },
+  "dependencies": {
+    "@fulcra/command": "workspace:^1.0.0",
+    "@fulcra/log": "workspace:^1.0.0",
+    "@fulcra/package": "workspace:^1.0.0",
+    "@fulcra/request": "workspace:^1.0.0",
+    "@fulcra/tool": "workspace:^1.0.0",
+    "ejs": "^3.1.9",
+    "fs": "0.0.1-security",
+    "fs-extra": "^11.2.0",
+    "glob": "^7.2.0",
+    "inquirer": "^8.2.6",
+    "kebab-case": "^1.0.2",
+    "path": "^0.12.7",
+    "semver": "^7.5.4",
+    "user-home": "^3.0.0"
+  },
+  "gitHead": "b29bc735be1389cbb7a7bfa6ddd6a51a9e2ae999"
+}
