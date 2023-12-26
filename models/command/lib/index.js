@@ -21,16 +21,16 @@ class Command {
       throw new Error("参数列表不能为空")
     }
 
-    let runner = new Promise((resolve, reject) => {
-      let chain = Promise.resolve()
-      chain = chain.then(() => this.checkNodeVersion())
-      chain = chain.then(() => this.initArgs())
-      chain = chain.then(() => this.init())
-      chain = chain.then(() => this.exec())
-      chain.catch(err => {
-        log.warn(err)
-      })
+
+    let chain = Promise.resolve()
+    chain = chain.then(() => this.checkNodeVersion())
+    chain = chain.then(() => this.initArgs())
+    chain = chain.then(() => this.init())
+    chain = chain.then(() => this.exec())
+    chain.catch(err => {
+      log.warn("Command Error", err)
     })
+
   }
 
   init() {
