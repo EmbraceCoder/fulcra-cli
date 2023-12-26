@@ -1,6 +1,6 @@
 {
   "name": "@fulcra/init",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "> TODO: description",
   "author": "Embrace <wangyifreedom@126.com>",
   "homepage": "https://github.com/EmbraceCoder/zhid-cli#readme",
@@ -24,11 +24,11 @@
     "url": "https://github.com/EmbraceCoder/zhid-cli/issues"
   },
   "dependencies": {
-    "@fulcra/command": "workspace:^1.0.0",
-    "@fulcra/log": "workspace:^1.0.0",
-    "@fulcra/package": "workspace:^1.0.0",
-    "@fulcra/request": "workspace:^1.0.0",
-    "@fulcra/tool": "workspace:^1.0.0",
+    "@fulcra/command": "workspace:^1.0.1",
+    "@fulcra/log": "workspace:^1.0.1",
+    "@fulcra/package": "workspace:^1.0.1",
+    "@fulcra/request": "workspace:^1.0.1",
+    "@fulcra/tool": "workspace:^1.0.1",
     "ejs": "^3.1.9",
     "fs": "0.0.1-security",
     "fs-extra": "^11.2.0",

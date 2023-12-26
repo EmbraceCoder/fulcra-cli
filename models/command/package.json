@@ -1,6 +1,6 @@
 {
   "name": "@fulcra/command",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "> TODO: description",
   "author": "Embrace <wangyifreedom@126.com>",
   "homepage": "https://github.com/EmbraceCoder/zhid-cli#readme",
@@ -24,7 +24,7 @@
     "url": "https://github.com/EmbraceCoder/zhid-cli/issues"
   },
   "dependencies": {
-    "@fulcra/log": "workspace:^1.0.0",
+    "@fulcra/log": "workspace:^1.0.1",
     "colors": "^1.4.0",
     "semver": "^7.5.4"
   }
