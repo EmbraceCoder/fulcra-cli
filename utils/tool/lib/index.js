@@ -39,7 +39,6 @@ function execAsync(command, args, options) {
     const p = spawn(command, args, options)
 
     p.on("error", e => {
-      console.log("error", e)
       reject(e)
     })
 

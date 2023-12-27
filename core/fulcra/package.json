@@ -37,8 +37,7 @@
     "os": "^0.1.2",
     "path-exists": "^4.0.0",
     "root-check": "^1.0.0",
-    "semver": "^7.5.4",
-    "user-home": "^3.0.0"
+    "semver": "^7.5.4"
   },
   "gitHead": "b29bc735be1389cbb7a7bfa6ddd6a51a9e2ae999"
 }

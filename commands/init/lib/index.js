@@ -9,7 +9,7 @@ const inquirer = require("inquirer")
 const semver = require("semver")
 const {getProjectTemplate} = require("./getProjectTemplate")
 const Package = require("@fulcra/package")
-const userHome = require("user-home")
+const {homedir} = require("os")
 const {spinnerStart, sleep, execAsync} = require("@fulcra/tool")
 
 const ejs = require("ejs")
@@ -65,6 +65,9 @@ class InitCommand extends Command {
 
   // 命令执行前的准备
   async prepare() {
+
+    log.verbose("process env", process.env)
+
     const template = await getProjectTemplate()
 
     if (!template && template.length === 0) {
@@ -291,7 +294,7 @@ class InitCommand extends Command {
   async downloadTemplate() {
     // 通过项目模版 API 获取项目模版信息
     const {projectTemplate} = this.projectInfo
-
+    const userHome = homedir()
     const templateInfo = this.template.find(temp => {
       return temp.npmName === projectTemplate
     })
@@ -445,7 +448,7 @@ class InitCommand extends Command {
       // 查找入口文件
       const rootFile = this.templateNpm.getRootFilePath()
       if (fs.existsSync(rootFile)) {
-        log.verbose("====== 开始执行自定义模版 =======")
+        log.verbose("download", "====== 开始执行自定义模版 =======")
         const templatePath = path.resolve(this.templateNpm.cacheFilePath, 'template')
         const targetPath = path.resolve(process.cwd(), this.projectName)
 
@@ -455,16 +458,12 @@ class InitCommand extends Command {
           templateInfo: this.templateInfo,
           projectInfo: this.projectInfo
         }
-        // const code = `require('${rootFile}')()`
         const code = `require('${rootFile}')(${JSON.stringify(options)})`
-        console.log("process", process.cwd())
         log.verbose("code", code)
         await execAsync('node', ['-e', code], {
           stdio: 'inherit',
           cwd: process.cwd()
         })
-
-
       }else {
         throw new Error("自定义模版入口文件不存在")
       }
@@ -483,7 +482,6 @@ class InitCommand extends Command {
     const dir = path.resolve(process.cwd(), this.projectName)
     const _this = this
 
-    console.log(_this.projectInfo)
     return new Promise((resolve, reject) => {
       glob('**', {
         cwd: dir,
@@ -498,7 +496,6 @@ class InitCommand extends Command {
         const imagePattern = /\.(jpg|png|gif|jpeg)$/i; // 正则表达式匹配.jpg和.png文件
         Promise.all(files.map(file => {
           const filePath = path.join(dir, file)
-          console.log()
           return new Promise((resolve, reject) => {
             if (!imagePattern.test(filePath)) {
               ejs.renderFile(filePath, _this.projectInfo

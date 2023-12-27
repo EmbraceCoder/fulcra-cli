@@ -35,9 +35,9 @@
     "glob": "^7.2.0",
     "inquirer": "^8.2.6",
     "kebab-case": "^1.0.2",
+    "os": "^0.1.2",
     "path": "^0.12.7",
-    "semver": "^7.5.4",
-    "user-home": "^3.0.0"
+    "semver": "^7.5.4"
   },
   "gitHead": "b29bc735be1389cbb7a7bfa6ddd6a51a9e2ae999"
 }

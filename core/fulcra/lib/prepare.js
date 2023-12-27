@@ -4,14 +4,11 @@ const constant = require("./const");
 const semver = require("semver");
 const colors = require("colors/safe");
 const rootCheck = require("root-check");
-const userHome = require("user-home");
 
 const  {homedir} = require("os")
 const {sync: pathExists} = require("path-exists");
 const path = require("path");
 const dotEnv = require("dotenv");
-
-console.log(homedir())
 
 module.exports = prepare
 
@@ -33,13 +30,15 @@ function checkRoot() {
 }
 
 function checkUserHome() {
+  const userHome = homedir()
+
   if (!userHome || !pathExists(userHome)) {
     throw new Error(colors.red('当前登录用户主目录不存在!'))
   }
 }
 
 function checkEnv() {
-  const dotEnvPath = path.resolve(userHome, ".env")
+  const dotEnvPath = path.resolve(homedir(), ".env")
 
   if (pathExists(dotEnvPath)) {
     dotEnv.config({
@@ -51,6 +50,8 @@ function checkEnv() {
 }
 
 function createDefaultConfig() {
+  const userHome = homedir()
+
   const cliConfig = {
     home: userHome
   }
