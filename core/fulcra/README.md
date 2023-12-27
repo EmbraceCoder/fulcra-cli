@@ -1,11 +1,7 @@
-# `zhid`
-
-> TODO: description
+# `fulcra`
 
 ## Usage
 
 ```
-const zhid = require('zhid');
-
-// TODO: DEMONSTRATE API
+npm install -g @fulcra/cli
 ```

@@ -48,7 +48,7 @@ class Command {
     const lowestNodeVersion = LOWEST_NODE_VERSION
 
     if (!semver.gte(curNodeVersion, lowestNodeVersion)) {
-      throw new Error(colors.red(`zhid 需要安装 v${lowestNodeVersion} 以上版本的 Node.js`))
+      throw new Error(colors.red(`fulcra 需要安装 v${lowestNodeVersion} 以上版本的 Node.js`))
     }
   }
 

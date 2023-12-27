@@ -73,7 +73,7 @@ async function checkGlobalUpdate() {
   // 提取所有的版本号, 对比哪些版本号大于当前版本号
   // 获取最新的版本号, 提示用户更新到该版本
 
-  const lastVersion = await getLastNpmVersion(currentVersion, "url-join")
+  const lastVersion = await getLastNpmVersion(currentVersion, pkg.name)
 
 
   if (lastVersion && semver.gt(lastVersion, currentVersion)) {
