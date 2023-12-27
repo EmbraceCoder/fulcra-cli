@@ -15,9 +15,9 @@ importers:
     specifiers:
       '@fulcra/command': workspace:^1.0.2
       '@fulcra/log': workspace:^1.0.2
-      '@fulcra/package': workspace:^1.0.2
+      '@fulcra/package': workspace:^1.0.3
       '@fulcra/request': workspace:^1.0.2
-      '@fulcra/tool': workspace:^1.0.2
+      '@fulcra/tool': workspace:^1.0.3
       ejs: ^3.1.9
       fs: 0.0.1-security
       fs-extra: ^11.2.0
@@ -46,8 +46,8 @@ importers:
   core/exec:
     specifiers:
       '@fulcra/log': workspace:^1.0.2
-      '@fulcra/package': workspace:^1.0.2
-      '@fulcra/tool': workspace:^1.0.2
+      '@fulcra/package': workspace:^1.0.3
+      '@fulcra/tool': workspace:^1.0.3
     dependencies:
       '@fulcra/log': link:../../utils/log
       '@fulcra/package': link:../../models/package
@@ -55,7 +55,7 @@ importers:
 
   core/fulcra:
     specifiers:
-      '@fulcra/exec': workspace:^1.0.2
+      '@fulcra/exec': workspace:^1.0.3
       '@fulcra/get-npm-info': workspace:^1.0.2
       '@fulcra/log': workspace:^1.0.2
       colors: ^1.4.0
@@ -96,7 +96,7 @@ importers:
       '@fulcra/format-path': workspace:^1.0.2
       '@fulcra/get-npm-info': workspace:^1.0.2
       '@fulcra/log': workspace:^1.0.2
-      '@fulcra/tool': workspace:^1.0.2
+      '@fulcra/tool': workspace:^1.0.3
       fs-extra: ^11.2.0
       npminstall: ^7.11.1
       path-exists: ^4.0.0

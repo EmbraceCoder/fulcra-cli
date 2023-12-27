@@ -1,6 +1,6 @@
 {
   "name": "@fulcra/package",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "> TODO: description",
   "author": "Embrace <wangyifreedom@126.com>",
   "homepage": "https://github.com/EmbraceCoder/fulcra-cli#readme",
@@ -27,7 +27,7 @@
     "@fulcra/format-path": "workspace:^1.0.2",
     "@fulcra/get-npm-info": "workspace:^1.0.2",
     "@fulcra/log": "workspace:^1.0.2",
-    "@fulcra/tool": "workspace:^1.0.2",
+    "@fulcra/tool": "workspace:^1.0.3",
     "fs-extra": "^11.2.0",
     "npminstall": "^7.11.1",
     "path-exists": "^4.0.0",

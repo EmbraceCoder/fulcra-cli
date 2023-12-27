@@ -1,6 +1,6 @@
 {
   "name": "@fulcra/exec",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "> TODO: description",
   "author": "Embrace <wangyifreedom@126.com>",
   "homepage": "https://github.com/EmbraceCoder/fulcra-cli#readme",
@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "@fulcra/log": "workspace:^1.0.2",
-    "@fulcra/package": "workspace:^1.0.2",
-    "@fulcra/tool": "workspace:^1.0.2"
+    "@fulcra/package": "workspace:^1.0.3",
+    "@fulcra/tool": "workspace:^1.0.3"
   }
 }
