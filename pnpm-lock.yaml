@@ -13,11 +13,11 @@ importers:
 
   commands/init:
     specifiers:
-      '@fulcra/command': workspace:^1.0.1
-      '@fulcra/log': workspace:^1.0.1
-      '@fulcra/package': workspace:^1.0.1
-      '@fulcra/request': workspace:^1.0.1
-      '@fulcra/tool': workspace:^1.0.1
+      '@fulcra/command': workspace:^1.0.2
+      '@fulcra/log': workspace:^1.0.2
+      '@fulcra/package': workspace:^1.0.2
+      '@fulcra/request': workspace:^1.0.2
+      '@fulcra/tool': workspace:^1.0.2
       ejs: ^3.1.9
       fs: 0.0.1-security
       fs-extra: ^11.2.0
@@ -45,9 +45,9 @@ importers:
 
   core/exec:
     specifiers:
-      '@fulcra/log': workspace:^1.0.1
-      '@fulcra/package': workspace:^1.0.1
-      '@fulcra/tool': workspace:^1.0.1
+      '@fulcra/log': workspace:^1.0.2
+      '@fulcra/package': workspace:^1.0.2
+      '@fulcra/tool': workspace:^1.0.2
     dependencies:
       '@fulcra/log': link:../../utils/log
       '@fulcra/package': link:../../models/package
@@ -55,9 +55,9 @@ importers:
 
   core/fulcra:
     specifiers:
-      '@fulcra/exec': workspace:^1.0.1
-      '@fulcra/get-npm-info': workspace:^1.0.1
-      '@fulcra/log': workspace:^1.0.1
+      '@fulcra/exec': workspace:^1.0.2
+      '@fulcra/get-npm-info': workspace:^1.0.2
+      '@fulcra/log': workspace:^1.0.2
       colors: ^1.4.0
       commander: ^11.1.0
       dotenv: ^16.3.1
@@ -85,7 +85,7 @@ importers:
 
   models/command:
     specifiers:
-      '@fulcra/log': workspace:^1.0.1
+      '@fulcra/log': workspace:^1.0.2
       colors: ^1.4.0
       semver: ^7.5.4
     dependencies:
@@ -95,10 +95,10 @@ importers:
 
   models/package:
     specifiers:
-      '@fulcra/format-path': workspace:^1.0.1
-      '@fulcra/get-npm-info': workspace:^1.0.1
-      '@fulcra/log': workspace:^1.0.1
-      '@fulcra/tool': workspace:^1.0.1
+      '@fulcra/format-path': workspace:^1.0.2
+      '@fulcra/get-npm-info': workspace:^1.0.2
+      '@fulcra/log': workspace:^1.0.2
+      '@fulcra/tool': workspace:^1.0.2
       fs-extra: ^11.2.0
       npminstall: ^7.11.1
       path-exists: ^4.0.0

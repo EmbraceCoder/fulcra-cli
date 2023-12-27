@@ -1,6 +1,6 @@
 {
   "name": "@fulcra/cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "> TODO: description",
   "author": "Embrace <wangyifreedom@126.com>",
   "homepage": "https://github.com/EmbraceCoder/fulcra-cli#readme",
@@ -26,9 +26,9 @@
     "url": "https://github.com/EmbraceCoder/fulcra-cli/issues"
   },
   "dependencies": {
-    "@fulcra/exec": "workspace:^1.0.1",
-    "@fulcra/get-npm-info": "workspace:^1.0.1",
-    "@fulcra/log": "workspace:^1.0.1",
+    "@fulcra/exec": "workspace:^1.0.2",
+    "@fulcra/get-npm-info": "workspace:^1.0.2",
+    "@fulcra/log": "workspace:^1.0.2",
     "colors": "^1.4.0",
     "commander": "^11.1.0",
     "dotenv": "^16.3.1",
