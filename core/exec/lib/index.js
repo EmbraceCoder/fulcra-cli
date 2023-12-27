@@ -10,7 +10,7 @@ module.exports = exec;
 
 
 const SETTINGS = {
-  init: "@meow-cli/init"
+  init: "@fulcra/init"
 }
 
 const CACHE_MODULES_DIR = "dependencies"
